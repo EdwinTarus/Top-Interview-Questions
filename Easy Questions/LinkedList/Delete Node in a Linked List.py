@@ -10,7 +10,10 @@ class Solution:
         :type node: ListNode
         :rtype: void Do not return anything, modify node in-place instead.
         """
-        
+        """
+        The trick is to make the value of that node to be the value of the next node 
+        and the pointer to point to the next next node.
+        """
         node.val = node.next.val
         node.next = node.next.next
         
